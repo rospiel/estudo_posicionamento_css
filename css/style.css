@@ -30,7 +30,7 @@ body {
   /* Centralizar */
 }
 
-/* Faz com que o elemento pai passa a ter uma altura de acordo com os elementos filhos */
+/* Faz com que o elemento pai passa a ter uma altura de acordo com os elementos filhos que fazem uso de float */
 .menu-container::after, .menu-container::before {
   content: ''; /* Melhor aceito em todos os navegadores */
   display: table; /* Melhor aceito em todos os navegadores */
@@ -59,3 +59,38 @@ a.menu-logo {
   color: #fff;
   font-size: 1.125em;
 }
+
+/* Fim Menu */
+
+/* Main */
+
+.intro {
+  background: url('../img/bg-intro.jpg') no-repeat center center;
+  /* Cubra todo o espaço */
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+} 
+
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+/* Criando o separador */
+.intro h1::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.intro p {
+  font-style: italic;
+  font-size: 1.125em;
+}
+
+/* Fim Main */
