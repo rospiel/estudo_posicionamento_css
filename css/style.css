@@ -4,3 +4,58 @@ body, h1, h2, h3, p, ul {
   padding: 0px;
   margin: 0px;
 }
+
+body {
+  font-family: Georgia, serif;
+  color: #252525;
+}
+
+/* Menu */
+
+.menu {
+  background: #252525;
+  padding: 20px 0;
+}
+
+.menu-container {
+  max-width: 960px;
+
+  /* Centralizar Incomum */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* Centralizar */
+
+  /* Centralizar Ccomum */
+  margin: 0 auto;
+  /* Centralizar */
+}
+
+/* Faz com que o elemento pai passa a ter uma altura de acordo com os elementos filhos */
+.menu-container::after, .menu-container::before {
+  content: ''; /* Melhor aceito em todos os navegadores */
+  display: table; /* Melhor aceito em todos os navegadores */
+  clear: both;
+}
+
+a.menu-logo {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu-nav {
+  float: right;
+  margin-right: 10px;
+}
+
+.menu-nav li {
+  display: inline-block;
+}
+
+.menu-nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125em;
+}
