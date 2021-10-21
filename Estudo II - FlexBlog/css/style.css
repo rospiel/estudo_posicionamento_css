@@ -1,0 +1,29 @@
+/* RESET DOS ELEMENTOS */
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: #222222;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    /* MAXIMO TAMANHO ORIGINAL DA IMAGEM ALEM DE PERMITIR DIMINUIR CONFORME              DISPOSITIVO */
+    max-width: 100%;
+}
+
+* {
+    /* RESPEITA O WIDTH SE DEFINIDO NAO AGREGANDO E DEIXANDO + QUE O DETERMINADO */
+    box-sizing: border-box;
+}
